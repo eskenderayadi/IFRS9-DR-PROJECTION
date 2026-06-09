@@ -1,4 +1,4 @@
-# Forward-Looking Credit Risk (IFRS 9) — PD Projection with Macroeconomic Scenarios
+# Forward-Looking Credit Risk (IFRS 9) — DR Projection with Macroeconomic Scenarios
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)]()
 [![Streamlit](https://img.shields.io/badge/Streamlit-app-brightgreen.svg)]()
