@@ -13,8 +13,8 @@ It demonstrates how to integrate **macroeconomic scenarios** (GDP growth, unempl
 
 ## 🚀 Highlights
 
-- **IFRS 9 forward-looking** treatment with scenario-conditioned PD.
-- **Feature pipeline** for macro variables → PD drivers (lagging, differencing, scaling).
+- **IFRS 9 forward-looking** treatment with scenario-conditioned DR.
+- **Feature pipeline** for macro variables → DR drivers (lagging, differencing, scaling).
 - **Stat/ML models** (e.g., logistic regression / gradient boosting / GAM—choose your flavor).
 - **Scenario engine** to run **baseline / adverse / optimistic** cases and sensitivity sweeps.
 - **Streamlit app** for interactive exploration and visualization.
@@ -26,7 +26,7 @@ It demonstrates how to integrate **macroeconomic scenarios** (GDP growth, unempl
 
 ```
 .
-├─ streamlit_app.py          # Interactive app (forward-looking PD scenarios)
+├─ streamlit_app.py          # Interactive app (forward-looking DR scenarios)
 ├─ main.ipynb                # Research notebook (feature eng., modeling, evaluation)
 ├─ requirements.txt
 ├─ README.md
@@ -66,7 +66,7 @@ jupyter lab  # or jupyter notebook
 
 - `data/file_name.xlxs`: monthly/quarterly macro indicators with columns like:
   - `date, gdp_growth, unemployment_rate, policy_rate, cpi_inflation, credit_spread`
-- `data/historical_pd.xlsx`: historical PDs (by portfolio/segment/vintage) with columns like:
+- `data/historical_pd.xlsx`: historical DRs (by portfolio/segment/vintage) with columns like:
   - `date, segment, pd_obs`
 
 You can join and align these on `date` (taking care of frequency alignment and lags).
@@ -76,10 +76,10 @@ You can join and align these on `date` (taking care of frequency alignment and l
 ## 🧪 Methodology (overview)
 
 1. **Preparation**: Impute, lag, and scale macro variables; engineer changes and levels.
-2. **Estimation**: Fit a PD model (e.g., logit with macro drivers + seasonality / cohort effects).
-3. **Scenarioing**: Feed **forward** macro paths (baseline/adverse/optimistic) to produce PD projections.
+2. **Estimation**: Fit a DR model (e.g., logit with macro drivers + seasonality / cohort effects).
+3. **Scenarioing**: Feed **forward** macro paths (baseline/adverse/optimistic) to produce DR projections.
 4. **Validation**: Backtest on a rolling window; compare **MAE/RMSE** and **directional accuracy**.
-5. **Decisioning**: Export PD paths for ECL components; sensitivity analysis by driver.
+5. **Decisioning**: Export DR paths for ECL components; sensitivity analysis by driver.
 
 > The exact modeling choices are flexible—adapt to your data and policy.
 
@@ -89,7 +89,7 @@ You can join and align these on `date` (taking care of frequency alignment and l
 
 - Select scenario (**baseline / adverse / optimistic**) and horizon.
 - Adjust shocks (Δunemployment, Δrates, ΔGDP, etc.).
-- Visualize **projected PD** vs. historicals and download the results as CSV.
+- Visualize **projected DR** vs. historicals and download the results as CSV.
 
 ---
 
@@ -117,7 +117,7 @@ Released under the **MIT License**. See `LICENSE` for details.
 
 ## 🙌 Acknowledgements
 
-This project was prepared as part of the **Nexialog Consulting Challenge** and focuses on **forward-looking IFRS 9 PD** modeling with macroeconomic scenarios.
+This project was prepared as part of the **Nexialog Consulting Challenge** and focuses on **forward-looking DR** modeling with macroeconomic scenarios respecting IFRS-9 conventions.
 
 ---
 
