@@ -64,17 +64,9 @@ You can join and align these on `date` (taking care of frequency alignment and l
 
 ## 📚 Reproduce
 
-- Run the notebook `main_nexialog.ipynb` end-to-end.
+- Run the notebook `main.ipynb` end-to-end.
 - Train/save your model artifacts to `artifacts/` (e.g., `model.joblib`, `scaler.joblib`).
 - The Streamlit app will load them at startup.
-
----
-
-## 🔒 Notes on governance
-
-- Keep a **model card** (assumptions, data lineage, limitations).
-- Track **scenario definitions** and **versioned parameters**.
-- Document **limitations** (extrapolation risk, regime changes, data gaps).
 
 ---
 
@@ -86,8 +78,7 @@ Released under the **MIT License**. See `LICENSE` for details.
 
 ## 🙌 Acknowledgements
 
-This project was prepared as part of the **Nexialog Consulting Challenge** and focuses on **forward-looking DR** modeling with macroeconomic scenarios respecting IFRS-9 conventions.
-
+This project was prepared as part of the **Nexialog Consulting Challenge**, so great thanks to Mr. Salem who gave us this great opportunity.
 ---
 
 **Model Card:** see [MODEL_CARD.md](MODEL_CARD.md) for detailed documentation.
