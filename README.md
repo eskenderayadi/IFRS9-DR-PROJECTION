@@ -16,7 +16,7 @@ It demonstrates how to integrate **macroeconomic scenarios** (GDP growth, unempl
 ```bash
 #1) Clone repository with git:
 git clone https://github.com/eskenderayadi/IFRS9-DR-PROJECTION.git nexialog
-cd nexilog
+cd nexialog
 
 # 2) Create and activate a virtual env (recommended)
 uv sync
