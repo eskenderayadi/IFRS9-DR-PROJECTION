@@ -11,53 +11,22 @@ It demonstrates how to integrate **macroeconomic scenarios** (GDP growth, unempl
 
 ---
 
-## 🚀 Highlights
-
-- **IFRS 9 forward-looking** treatment with scenario-conditioned DR.
-- **Feature pipeline** for macro variables → DR drivers (lagging, differencing, scaling).
-- **Stat/ML models** (e.g., logistic regression / gradient boosting / GAM—choose your flavor).
-- **Scenario engine** to run **baseline / adverse / optimistic** cases and sensitivity sweeps.
-- **Streamlit app** for interactive exploration and visualization.
-- **Reproducible notebook**: `main.ipynb` (provided).
-
----
-
-## 🧭 Project structure
-
-```
-.
-├─ streamlit_app.py          # Interactive app (forward-looking DR scenarios)
-├─ main.ipynb                # Research notebook (feature eng., modeling, evaluation)
-├─ requirements.txt
-├─ README.md
-├─ LICENSE
-├─ .gitignore
-├─ MODEL_CARD.md             # Detailed model documentation
-├─ streamlit data/
-└─ notebook data/                    
-```
-
-> You’ve already provided `main_nexialog.ipynb`. Keep it at repo root or in `notebooks/` and adjust paths accordingly.
-
----
-
 ## 📦 Quickstart
 
 ```bash
-# 1) Create and activate a virtual env (recommended)
-python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
+#1) Clone repository with git:
+git clone https://github.com/eskenderayadi/IFRS9-DR-PROJECTION.git nexialog
+cd nexilog
 
-# 2) Install dependencies
-pip install -r requirements.txt
+# 2) Create and activate a virtual env (recommended)
+uv sync
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
 
 # 3) (Optional) add data
 # Put your macro and default/cohort CSVs in ./data and update streamlit_app.py config
 
 # 4) Run the Streamlit app
 streamlit run streamlit_app.py
-
-# 5) Explore the notebook
-jupyter lab  # or jupyter notebook
 ```
 
 ---
