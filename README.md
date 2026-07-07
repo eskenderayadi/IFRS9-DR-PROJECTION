@@ -7,8 +7,8 @@
 This repository contains a **forward-looking (prospective)** credit-risk project aligned with **IFRS 9** principles.  
 It demonstrates how to integrate **macroeconomic scenarios** (GDP growth, unemployment, interest rates, and their lags) into **Probability of Default (PD)** projections over 12-month and lifetime horizons.
 
-> Used Models : OLS, Bêta, and Decision Tree
->
+> Used Models : OLS, Bêta, and Decision Tree.
+
 > Best Model : Decision Tree with an **R^2 of 0.943**.
 
 ---
