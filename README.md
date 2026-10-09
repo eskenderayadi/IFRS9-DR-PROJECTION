@@ -1,4 +1,6 @@
 # Nexialog Project
+<img width="738" height="267" alt="image" src="https://github.com/user-attachments/assets/6dfaa8c3-13eb-499d-873b-a22728d9edc7" />
+
 
 This project analyzes macroeconomic data to model and predict 2020-2022 quarterly default rates (**DR**) by modelling and regressing 2010 to 2019 quarterly DRs. It compares three statistical models:
 
